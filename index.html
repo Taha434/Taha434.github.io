@@ -1,21 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>طاها بنائی </title>
-    <style>
-        body {
-        background :#121212;
-        text-align :center;
-        font-size : 50px;
-        color:#ffffff; 
-        }
-        </style>
-     
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taha Banaii - Recipes</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #e5ad6d;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+        background: #d98138;
+        padding: 25px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    header nav a {
+        margin-left: 25px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+        background: #d98138;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero img {
+        width: 60%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+    /* ===== SEARCH BOX ===== */
+    .search-box {
+        background: #fae4b2;
+        padding: 15px;
+        border-radius: 40px;
+        width: 80%;
+        margin: 25px auto;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: #7f6340;
+    }
+
+    .search-box input {
+        border: none;
+        outline: none;
+        width: 100%;
+        background: none;
+        font-size: 20px;
+    }
+
+    /* ===== FEATURED SECTION ===== */
+    .section {
+        background: #fde9bf;
+        padding: 35px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: #4a2d12;
+    }
+
+    .recipes {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .recipe-card {
+        width: 180px;
+        height: 180px;
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ===== BUTTON GRID ===== */
+    .btn-grid {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .btn {
+        background: #ecb06a;
+        padding: 18px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 22px;
+        color: #4a2d12;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+</style>
 </head>
 <body>
-     سلام چطوری؟ 
-    <p> به سایت طاها بنائی خوش اومد
+
+<header>
+    <div>Taha Banaii</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <img src="foods/food.jpg" alt="Main Dish">
+</div>
+
+<div class="search-box">
+    🔍
+    <input type="text" placeholder="Search recipes">
+</div>
+
+<div class="section">
+    <h2>Featured Recipes</h2>
+
+    <div class="recipes">
+        <div class="recipe-card"><img src="foods/pasta.jpg" alt="Pasta"></div>
+        <div class="recipe-card"><img src="foods/soup.jpg" alt="Soup"></div>
+        <div class="recipe-card"><img src="foods/burger.jpg" alt="Burger"></div>
+    </div>
+
+    <div class="btn-grid">
+        <div class="btn">Saved Recipes</div>
+        <div class="btn">My Recipes</div>
+        <div class="btn">Comments</div>
+        <div class="btn">Trending</div>
+    </div>
+</div>
 
 </body>
 </html>
